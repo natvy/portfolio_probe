@@ -25,6 +25,7 @@
     <script src="js/modernizr.js"></script>
 
 
+
     <title>Portfolio_NataliaUrias</title>
 </head>
 
@@ -35,13 +36,17 @@
         <div class="container">
             <!--HERE IS MY NAVBAR, PERO PROBABLEMENTE LA REDUZCO -->
             <!--NO ME GUSTA LA REDUNDANCIA-->
-            <nav class="menu">
-                <!--TODOS ESTOS "a" SON LOS LINKS A LAS "PAGES" A IMPLEMENTAR-->
-                <a href="">INICIO</a>
-                <a href="">SOBRE</a>
-                <a href="">TRABAJOS</a>
-                <a href="">HABILIDADES</a>
-                <a href="">CONTACTOS</a>
+            <nav>
+                <button class="menu-toggle">☰</button>
+                <!--el ul me sirve para crear la lista desordenada, no hay nada gerarquico asui...-->
+                <ul class="menu">
+                    <!--TODOS ESTOS "a" SON LOS LINKS A LAS "PAGES" A IMPLEMENTAR-->
+                    <a href="">INICIO</a>
+                    <a href="">SOBRE</a>
+                    <a href="">TRABAJOS</a>
+                    <a href="">HABILIDADES</a>
+                    <a href="">CONTACTOS</a>
+                </ul>
             </nav>
             <!--CONTENEDOR DE MI INFO PRINCIPAL-->
             <div class="container-text">
@@ -277,7 +282,8 @@
             <!--Y EL VALUE DEFINE EL TEXTO QUE ESTARA EN EL BOTON-->
         </div>
     </footer>
-
+    <!--SCRIPT PARA MI BURGUERBUTTON-->
+    <script src="js/burguerbutton.js"></script>
 </body>
 
 </html>

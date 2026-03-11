@@ -1,108 +1,247 @@
-/* Configuración general */
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
+/* BODY GENERAL */
 body {
   background-color: #7e01af;
   color: #333;
   line-height: 1.6;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+  text-align: center;
 }
 
+/* HEADER */
 header {
   background: #aaff00;
   color: rgb(231, 0, 0);
   padding: 20px;
-  text-align: center;
   font-family: 'Coral Pixels', serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-nav ul {
-  background-color: aquamarine;
+/* NAVBAR */
+nav {
+  background: linear-gradient(135deg, #6a00ff, #a100ff);
+  padding: 12px 0;
+  font-family: "Audiowide", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* MENU */
+.menu{
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /*para que sea respinsivo y que baje si no caben*/
+  gap: 40px;
 }
 
-nav {
-  font-family: "Audiowide", sans-serif;
-  background-color: darkblue;
-  padding: 1rem 0; /*espacio arriba y abajo de la barra*/
-}
-
-nav ul li {
-  display: inline;
-  margin: 10px 40px;
-}
-
-nav a {
-  color: black;
+/* LINKS */
+.menu a{
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 15px;
-  transition: all 0.3s ease; /*suavisa efecto resaltado*/
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.1); /*sombra suave*/
   color: white;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  position: relative;
 }
 
-/* EFECTO ACTIVE (cuando se hace clic o está seleccionado) */
-nav a:active, nav a.active {
-  background-color: black;
-  color: aquamarine;
-  transform: scale(1.1); /* Se hace un poquito más grande */
+/* EFECTO HOVER */
+.menu a:hover{
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
 }
 
-/* RESPONSIVO: Para celulares */
-@media (max-width: 600px) {
-  nav ul li {
-    margin: 10px 15px; /* Menos espacio en pantallas chicas */
+/* LINEA ANIMADA */
+.menu a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #aaff00;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after{
+  width: 100%;
+}
+
+/* BOTON HAMBURGUESA */
+.menu-toggle{
+  display: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+}
+
+@media (max-width:700px){
+
+  .menu-toggle{
+    display:block;
+    margin:auto;
   }
-  nav ul {
-    flex-direction: column; /* Se ponen uno debajo de otro */
+
+  .menu{
+    display:none;
+    flex-direction: column;
     align-items: center;
+    gap:20px;
+    padding:20px 0;
   }
+
+  .menu.show{
+    display:flex;
+  }
+
 }
 
+/* CONTENIDO PRINCIPAL */
 main {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* SECCIONES */
+section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+  border: none;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* LISTAS */
+ul {
+  margin: 10px auto;
+  display: inline-block;
+  text-align: left;
+}
+
+/* IMÁGENES */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+button[type="submit"] {
+  align-self: center;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #555;
+}
+
+/* ASIDE */
 aside {
   background: #ddd;
   padding: 10px;
   margin-top: 20px;
 }
 
+/* FOOTER */
 footer {
   background: #95ff00;
-  text-align: center;
   padding: 10px;
   margin-top: 20px;
   font-family: 'Coral Pixels', serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
+/*mis h3 que son subtitulos*/
 h3 {
   font-family: 'Coral Pixels', serif;
-  font-weight: 400;
-  font-style: normal;
+}
+
+/*LOS CONTAINER JOBS, COLUMNAS DE 3, 2 Y 1 JOB*/
+
+.container-jobs,
+.container-skills
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/*TARJETAS DE TRABAJOS/JOBS*/
+.job{
+  text-align: center;
+  max-width: 300px;
+
+}
+
+.thumb img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*la vdd no se si hay forma mas eficiente de hacer esto*/
+ @media (max-width:900px){
+  .container-jobs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULARES */
+@media (max-width:500px){
+  .container-jobs{
+    grid-template-columns: 1fr;
+  }
 }
