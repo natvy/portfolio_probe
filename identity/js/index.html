@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--PARTE 1 DE LA ACTIVIDAD-->
 
 <head>
     <meta charset="UTF-8">
@@ -11,33 +12,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 
     <!--ESTILOS DEFINIDOS POR EL PROFE-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/identity/css/normalize.css">
+    <link rel="stylesheet" href="/identity/css/styles.css">
 
     <!--ICONOS PROXIMAMENTE SEPARADOS-->
-    <link rel="stylesheet" href="icons/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="\identity\icons\fontawesome-free-7.2.0-web\css\all.min.css">
 
     <!--Scripts-->
-    <script src="js/modernizr-config.json"></script>
+    <script src="identity/js/modernizr-config.json"></script>
 
 
     <title>Portfolio_NataliaUrias</title>
 </head>
 
 <body>
+    <!--PARTE 2 DE LA ACTIVIDAD-->
     <header>
+        <!--CONTENEDOR PRINCIPAL DE MI HEADER-->
         <div class="container">
+            <!--HERE IS MY NAVBAR, PERO PROBABLEMENTE LA REDUZCO -->
+            <!--NO ME GUSTA LA REDUNDANCIA-->
             <nav class="menu">
+                <!--TODOS ESTOS "a" SON LOS LINKS A LAS "PAGES" A IMPLEMENTAR-->
                 <a href="">INICIO</a>
                 <a href="">SOBRE</a>
                 <a href="">TRABAJOS</a>
                 <a href="">HABILIDADES</a>
                 <a href="">CONTACTOS</a>
             </nav>
+            <!--CONTENEDOR DE MI INFO PRINCIPAL-->
             <div class="container-text">
                 <div class="text">
+                    <!-- AQUI ESTA MI NOMBRE, H1, SOLO SE DEBERIA DE UTILIZAR UN H1 POR PAGE-->
+                    <!-- SON COMO LOS TITULOS DE UN LIBRO, DOS O MAS SERIA CONFUSO.-->
                     <h1 class="name">Natalia Urias</h1>
+                    <!--HERE IS A H2, maybe subtitulo-->
                     <h2 class="profession">Organic dude, student</h2>
+                    <!--BOTON PARA QUE DESCARGUEN MI CV-->
                     <button class="btn-cv">Download CV</button>
 
                 </div>
@@ -46,17 +57,222 @@
 
 
         </div>
-
+        <!--CONTENIDO RIDICULO POR RELLENO EN MI H3-->
         <h3>Hello, my dear friend. You know you're loved here.</h3>
     </header>
 
+    <!--PARTE 3 DE LA ACTIVIDAD-->
     <!--Principal content-->
     <div id="main">
-        <p>Mis trabajos, mi dedicacion, mi alma.</p>
+        <main>
+            <!--SECCION DE MI INFO IDENTIFICATORIA :D-->
+            <section id="section-about">
+                <div class="container">
+                    <p>Mis trabajos, mi dedicacion, mi alma.</p>
+                    <div class="photo">
+                        <!--ESTA ES LA ESTRUCTURA PARA CARGAR UNA IMAGEN-->
+                        <img src="\identity\img\yo.png" width="200px" height="200px" alt="Natalia :D">
+                    </div>
+                    <div class="text">
+                        <h3 class="title">ABOUT ME</h3>
+                        <!--SE UTLIZAN ETIQUETAS SPAN PARA RESALTAR EL TEXTO QUE YO QUIERA-->
+                        <p>Hey, my dear friend. Here is a place <span class="bold"> WITH A LOT OF LOVE FOR YOU</span>
+                            you can feel the
+                            insanity of that emotion that can make us feel alive, the only reason we still alive. <span
+                                class="bold">
+                                MAYBE I CAN SPEAK JAPANESE</span> when im with you. Or maybe you can bought me a
+                            software and
+                            then tou become in a happiest person. Thats a lie, you will be happy if you still here,
+                            thats the only thing you need.</p>
+                    </div>
+                </div>
+            </section>
+            <!--ESTA SECTION FUNCIONARA PARA MOSTRAR MIS TRABAJOS, ASI PODEMOS REDIRIGIR EL SCROLL HASTA AQUI,-->
+            <!--SOLO DEJANDOLE UN ID A CADA SECTION-->
+            <section id="section-jobs">
+                <div class="container">
+                    <h3 class="titulo">MY JOBS</h3>
+                    <div class="container-jobs">
+                        <!--TODAS LAS ETIQUETAS "p" SERAN EMPLEADAS PARA ESCRIBIR TEXTO NORMAL-->
+                        <!--DEFINICIONES, COMPONENTES Y TITULOS-->
+                        <!--LAS ETIQUETAS "img" TAMBIEN SE UTILIZARAN CON LA MISMA ESTRUCTURA-->
+                        <!--QUE ANTERIORMENTE PARA MOSTRAR REFERENCIAS VISUALES DE LOS TRABAJOS-->
+
+                        <!--TRABAJO 1-->
+                        <div class="job">
+                            <div class="thumb">
+                                <img src="\identity\img\jobs\job1.png" width="250px" height="250px" alt="gatito">
+                            </div>
+                            <div class="description">
+                                <p class="name">Gatito hecho en SAI</p>
+                                <p class="category">HTML - CSS - PHP</p>
+                            </div>
+                        </div>
+                        <!--TRABAJO 2-->
+                        <div class="job">
+                            <div class="thumb">
+                                <img src="\identity\img\jobs\job2.png" width="250px" height="250px" alt="gatito">
+                            </div>
+                            <div class="description">
+                                <p class="name">Foto para concurso "una mirada por la inclucion"</p>
+                                <p class="category">HTML - CSS - PHP</p>
+                            </div>
+                        </div>
+                        <!--TRABAJO 3-->
+                        <div class="job">
+                            <div class="thumb">
+                                <img src="\identity\img\jobs\job3.png" width="250px" height="250px" alt="gatito">
+                            </div>
+                            <div class="description">
+                                <p class="name">Pseudo cartel de promotor del programa PASA</p>
+                                <p class="category">HTML - CSS - PHP</p>
+                            </div>
+                        </div>
+                        <!--TRABAJO 4-->
+                        <div class="job">
+                            <div class="thumb">
+                                <img src="\identity\img\jobs\job4.png" width="250px" height="250px" alt="gatito">
+                            </div>
+                            <div class="description">
+                                <p class="name">El padre, el hijo, y el espiritu santo</p>
+                                <p class="category">HTML - CSS - PHP</p>
+                            </div>
+                        </div>
+                        <!--TRABAJO 5-->
+                        <div class="job">
+                            <div class="thumb">
+                                <img src="\identity\img\jobs\job5.png" width="250px" height="250px" alt="gatito">
+                            </div>
+                            <div class="description">
+                                <p class="name">Portafolio web de arquitectura</p>
+                                <p class="category">TypeScript - JavaScript - CSS</p>
+                            </div>
+                        </div>
+                        <!--TRABAJO 6-->
+                        <div class="job">
+                            <div class="thumb">
+                                <img src="\identity\img\jobs\job6.png" width="250px" height="250px" alt="gatito">
+                            </div>
+                            <div class="description">
+                                <p class="name">Foto para flyer del club de lectura</p>
+                                <p class="category">HTML - CSS - PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--LA SIGUIENTE SECTION SE COMPONDRA DE CONTENEDORES CON ICONOS REPRESENTATIVOS-->
+            <!-- DE MIS SKILLS Y SU RESPECTIVA DESCRIPCION, COMPONENTES Y TITULOS-->
+            <section id="section-skills">
+                <div class="container">
+                    <h3 class="title">SKILLS</h3>
+                    <div class="container-skills">
+                        <!--SKILL: 1-->
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">Python</p>
+                                <p class="category">Experto</p>
+                            </div>
+                        </div>
+                        <!--SKILL: 2-->
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">HTML</p>
+                                <p class="category">Experto</p>
+                            </div>
+                        </div>
+                        <!--SKILL: 3-->
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-node"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">Node</p>
+                                <p class="category">Experto</p>
+                            </div>
+                        </div>
+                        <!--SKILL: 4-->
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-typescript"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">TypeScript</p>
+                                <p class="category">Experto</p>
+                            </div>
+                        </div>
+                        <!--SKILL: 5-->
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-css"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">CSS</p>
+                                <p class="category">Experto</p>
+                            </div>
+                        </div>
+                        <!--SKILL: 6-->
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">Java</p>
+                                <p class="category">Experto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ANTES DE CERRAR ESTA SECTION, COMENTO QUE LA DIFERENCIA ENTRE LOS ELEMENTOS -->
+                <!--ID Y CLASS RADICA EN QUE EL ID ES UN IDENTIFICADOR UUUUUNICO PARA UN SOLO ELEMENTO EN PAGE, -->
+                <!--MIENTRAS QUE EL CLASS ES REUTILIZABLE Y AGRUPA MULTIPLES ELEMENTOS DE LA MISMA CLASE-->
+            </section>
+
+
+
+        </main>
     </div>
+    <!--EL ELEMENTO QUE INDICA EL FIN DE LA PAGE, AQUI SE PONE INFO-->
     <footer>
-        <p>Puedes aprovechar... o no esta informacion. </p>
+        <div class="container">
+            <!--SECTION DE CONTACTO-->
+            <section id="section-contact">
+                <h3 class="title">CONTACT</h3>
+                <!--UTILIZO FORM PARA GENERAR AHI DENTRO LOS CAMPOS QUE HARAN EN VERDADERO FORM-->
+                <form class="form-menssage" action="">
+                    <!--MIS INPUTS ES UN CAMPO VACIO PARA LLENAR DE LO QUE SEA QUE PIDA EL TYPE-->
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Correo" required>
+                    <!--COMO EL INPUT, PERO PERMITE MULTILINEA, A DIFERENCIA DEL ANTERIOR QUE SOLO-->
+                    <!--PERMITE UNA LINEA-->
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input class="btn-send-msg" type="submit" value="Enviar">
+                </form>
+            </section>
+            <!--SECTION DE REDES SOCIALES-->
+            <section id="section-social-media">
+                <div class="container">
+                    <a class="facebook" href="http://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="youtube" href="http://www.youtube.com/"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a class="github" href="http://www.github.com/"><i class="fa-brands fa-github"></i></a>
+
+
+                </div>
+            </section>
+<!--ANTES DE CULMINAR... TOMO EL ESPACIO PARA ACLARAR QUE EL TYPE DEL FORM, ES EL-->
+<!--TIPO DE ENTRADA QUE VA A RECIBIR LA ETIQUETA VACIA DEL INPUT, NAME LE OTORGA IDENTIDAD AL INPUT,-->
+<!--EL PLACEHOLDER LE DA UNA ETIQUETA AL CAMPO VACIO PARA ANUNCIAR LO QUE REQUIERE EL INPIT-->
+<!--EL REQUIRED SE ENCARGA DE AVISAR QUE EL CAMPO VACIO NO PUEDE PERMANECER VACIO -->
+<!--Y EL VALUE DEFINE EL TEXTO QUE ESTARA EN EL BOTON-->
+        </div>
     </footer>
+
 </body>
 
 </html>
